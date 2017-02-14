@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.a04557105114.horaonibus.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_plus"
+        app:backgroundTint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:text="Não há empresas cadrastradas\nClique em + para adicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSemEmpresa"
+        android:layout_marginTop="300px"
+        android:layout_centerHorizontal="true"
+        tools:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="12dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="230px"
+        android:id="@+id/listaEmpresas" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cgt"
+        android:layout_marginTop="120px"
+        android:id="@+id/btn_consultar"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:text="Empresas Cadrastradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:layout_centerHorizontal="true"
+        tools:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/empreas" />
+
+</android.support.design.widget.CoordinatorLayout>

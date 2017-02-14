@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:fitsSystemWindows="true"
+    tools:context="com.example.a04557105114.horaonibus.Cadrastro">
+
+    <!-android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="1px"
+        android:ems="10"
+        android:id="@+id/editorigem"
+
+        android:hint="Origem" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="61px"
+        android:ems="10"
+        android:id="@+id/editdestino"
+
+        android:hint="Destino" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editvalor"
+
+        android:layout_marginTop="121px"
+        android:hint="Valor"/>
+
+    <TextView
+        android:text="Horário:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="204px"
+
+        android:id="@+id/textView" />
+
+    <Spinner
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201px"
+        android:id="@+id/spinner_hora"
+        android:layout_marginLeft="130px"
+         />
+
+    <Spinner
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_minuto"
+        android:layout_marginTop="201px"
+        android:layout_marginLeft="260px"
+         />
+
+    <Button
+        android:text="Cadrastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cadrastrar"
+        android:layout_marginTop="261px"
+        android:layout_marginLeft="200px"/>
+
+    <Button
+        android:text="Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelar"
+        android:layout_marginTop="261px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_below="@+id/cancelar"
+        android:layout_marginTop="14dp"
+        android:id="@+id/imageView"
+        android:background="@android:color/holo_blue_bright" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton" />
+
+</RelativeLayout>
+<!--/android.support.design.widget.CoordinatorLayout-->
